@@ -1,0 +1,82 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%); 
+    --dark-blue: hsl(229, 23%, 23%);  
+    --grey-blue: hsl(227, 10%, 46%); 
+    --dark-grey: hsl(0, 0%, 59%); 
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-repeat: no-repeat;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15%;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5%
+
+}
+
+.container .card-pattern {
+    border-radius: 5%;
+}
+
+.profile-img {
+    display: block;
+    border-radius: 50%;
+    border: solid 0.4rem white;
+    position: relative;
+    margin: auto;
+    bottom: 50px;
+}
+.main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-title {
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+
+.profile-title span {
+    margin-left: 0.5rem;
+    color: var(--dark-grayish-blue);
+    font-weight: lighter;
+}
+
+.profile-location {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.card-stats h3 p {
+    position: absolute;
+  top: 535px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 10px;
+  color: #fff;
+}
